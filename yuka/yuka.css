@@ -56,7 +56,7 @@
 }
 
 /* ボタン */
-.btn{
+.yuka-btn{
 	/*線の基点とするためrelativeを指定*/
 position:relative;
 	/*ボタンの形状*/  
@@ -69,8 +69,8 @@ display:inline-block;
 }
 
 /*線の設定*/
-.btn::before,
-.btn::after {
+.yuka-btn::before,
+.yuka-btn::after {
 content:'';
 	/*絶対配置で線の位置を決める*/
 position:absolute;
@@ -82,7 +82,7 @@ height:10px;
 transition:all 0.3s ease-in-out;
 }
 
-.btn::before{
+.yuka-btn::before{
 	/*事前に出現させる線の位置*/
 top:0;
 left:0;
@@ -90,7 +90,7 @@ left:0;
 border-width:2px 0 0 2px;
 }
 
-.btn::after{
+.yuka-btn::after{
 	/*事前に出現させる線の位置*/
 bottom:0;
 right:0;
@@ -99,8 +99,8 @@ border-width:0 2px 2px 0;
 }
 
 /*hoverした際の線の形状*/
-.btn:hover::before,
-.btn:hover::after{
+.yuka-btn:hover::before,
+.yuka-btn:hover::after{
 width:calc(100% - 2px);
 height:calc(100% - 2px);
 border-color:#666
