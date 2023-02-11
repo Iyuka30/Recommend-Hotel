@@ -5,5 +5,7 @@ $('.pics').slick({
 	autoplay: true,
 	autoplaySpeed: 2000,
 	isFinite: true,
+	arrows: true,
+	infinite: true,
 });
 
