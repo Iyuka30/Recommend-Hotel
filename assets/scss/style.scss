@@ -68,19 +68,16 @@ main {
 .okinawa {
 	display: flex;
 	margin-top: 100px;
-
 	img {
 		box-shadow: 20px 20px 0 #5e9ef634;
 	}
-
 	.okinawa-text {
 		margin-left: 150px;
-
 		h3 {
 			font-size: 30px;
-			margin-bottom: 30px;
+			margin-bottom: 30px;	
+			margin-top: 100px;	
 		}
-
 		p {
 			font-size: 20px;
 			margin-top: 20px;
@@ -95,22 +92,19 @@ main {
 	margin-top: 100px;
 	margin-bottom: 100px;
 	text-align: left;
-
 	img {
 		box-shadow: 20px 20px 0 #68f77e34;
 	}
-
 	.chiba-text {
 		margin-right: 80px;
 		width: 500px;
 		font-size: 20px;
 	}
-
 	h3 {
 		font-size: 30px;
 		margin-bottom: 30px;
+		margin-top: 100px;	
 	}
-
 	p {
 		font-size: 20px;
 		margin-top: 20px;
@@ -125,14 +119,12 @@ main {
 	transform-origin: left;
 	opacity: 0;
 }
-
 @keyframes smoothAnime {
 	from {
 		transform: translate3d(0, 100%, 0) skewY(12deg);
 		opacity: 0;
 	}
-
-	to {
+ 	to {
 		transform: translate3d(0, 0, 0) skewY(0);
 		opacity: 1;
 	}
@@ -148,7 +140,7 @@ main {
 	display: inline-block;
 	text-decoration: none;
 	outline: none;
-	margin-top: 50px;
+	margin-top: 70px;
 	font-size: 20px;
 
 	&::before,
