@@ -1,33 +1,37 @@
 // kv部分
 /* シーサーのとこ */
-img{
-  width: 100%;
+img {
+	width: 100%;
 }
-.kv{
+
+.kv {
 	position: relative;
 }
 
-.hako{
+.hako {
 	position: absolute;
 	bottom: 60px;
 	right: 10px;
-	img{
+
+	img {
 		height: 600px;
 		width: 600px;
 	}
-	p{
+
+	p {
 		position: relative;
 		bottom: 200px;
 		left: 170px;
 	}
 }
 
-.button{
+.button {
 	display: flex;
 	position: relative;
 	bottom: 222px;
 	left: 145px;
-	a{
+
+	a {
 		border: dashed 2px green;
 		background-color: lightgreen;
 		font-weight: bold;
@@ -38,20 +42,169 @@ img{
 		margin-right: 50px;
 		opacity: 0.7;
 	}
-	a:hover{
+
+	a:hover {
 		opacity: 1;
 	}
 }
 
-.gifu, .gunnma h2{
+main {
+	font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+// yuka
+// yuka-main
+.yuka {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+// 沖縄
+.okinawa {
+	display: flex;
+
+	img {
+		box-shadow: 20px 20px 0 #5e9ef634;
+	}
+
+	.okinawa-text {
+		margin-left: 150px;
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+	}
+}
+
+// 千葉
+.chiba {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: left;
+
+	img {
+		box-shadow: 20px 20px 0 #68f77e34;
+	}
+
+	.chiba-text {
+		margin-right: 80px;
+		width: 500px;
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	p {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+}
+
+/* 画像の動き */
+.yuka-img {
+	animation-name: smoothAnime;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+	opacity: 0;
+}
+
+@keyframes smoothAnime {
+	from {
+		transform: translate3d(0, 100%, 0) skewY(12deg);
+		opacity: 0;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0) skewY(0);
+		opacity: 1;
+	}
+}
+
+/* ボタン */
+.yuka-btn {
+	/*線の基点とするためrelativeを指定*/
+	position: relative;
+	/*ボタンの形状*/
+	color: #333;
+	padding: 10px 30px;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	margin-top: 50px;
+	font-size: 20px;
+
+	&::before,
+	&::after {
+		content: '';
+		/*絶対配置で線の位置を決める*/
+		position: absolute;
+		/*事前に出現させる線の形状*/
+		border: solid #333;
+		width: 10px;
+		height: 10px;
+		/*アニメーションの指定*/
+		transition: all 0.3s ease-in-out;
+	}
+
+	&::before {
+		/*事前に出現させる線の位置*/
+		top: 0;
+		left: 0;
+		/*事前に出現させる線の形状*/
+		border-width: 2px 0 0 2px;
+	}
+	&::after {
+		/*事前に出現させる線の位置*/
+		bottom: 0;
+		right: 0;
+		/*事前に出現させる線の形状*/
+		border-width: 0 2px 2px 0;
+
+	}
+	&:hover::before,
+	&:hover::after{
+		width: calc(100% - 2px);
+		height: calc(100% - 2px);
+		border-color: #666	
+	}
+}
+
+footer{
+	text-align: center;
+	margin-top: 100px;
+	.footer-img{
+		width: 200px;
+	}	
+}
+// yukaここまで
+
+
+
+// shotaro
+.gifu,
+.gunnma h2 {
 	text-align: center;
 	font-size: 2rem;
 	margin-top: 80px;
 }
 
-#Shotaro{
-	font-family: 'Zen Maru Gothic', sans-serif;
-	h2:hover{
+#Shotaro {
+
+	// font-family: 'Zen Maru Gothic', sans-serif;
+	h2:hover {
 		background-color: yellow;
 	}
 }
@@ -81,18 +234,21 @@ figcaption {
 	font-size: 20px;
 }
 
-.pics .slick-next{
-	right:20px!important;
+.pics .slick-next {
+	right: 20px !important;
 }
-.pics .slick-prev{
-	left:20px!important;
+
+.pics .slick-prev {
+	left: 20px !important;
 }
-.pics .slick-arrow{
-	width: initial!important;
-	height: initial!important;
-	z-index:2!important;
+
+.pics .slick-arrow {
+	width: initial !important;
+	height: initial !important;
+	z-index: 2 !important;
 }
-.pics .slick-arrow:before{
-	font-size: 60px!important;
-	color: yellow!important;
+
+.pics .slick-arrow:before {
+	font-size: 60px !important;
+	color: yellow !important;
 }
