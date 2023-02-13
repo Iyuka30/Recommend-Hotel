@@ -198,11 +198,19 @@ footer{
 .gunnma h2 {
 	text-align: center;
 	font-size: 2rem;
+}
+.gifu h2{
+	margin-top: 30px;
+}
+.gunnma h2{
 	margin-top: 80px;
 }
 
 #Shotaro {
-
+	h3{
+		font-size: 50px;
+		text-align: center;
+	}
 	// font-family: 'Zen Maru Gothic', sans-serif;
 	h2:hover {
 		background-color: yellow;
