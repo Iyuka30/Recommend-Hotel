@@ -53,9 +53,15 @@ main {
   margin: 0 auto;
   font-family: "Zen Maru Gothic", sans-serif;
 }
+.yuka h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
 
 .okinawa {
   display: flex;
+  margin-top: 100px;
 }
 .okinawa img {
   box-shadow: 20px 20px 0 rgba(94, 158, 246, 0.2039215686);

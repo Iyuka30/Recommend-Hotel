@@ -52,17 +52,22 @@ main {
 	font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-// yuka
 // yuka-main
 .yuka {
 	max-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Zen Maru Gothic', sans-serif;
+	h2{
+		font-size: 50px;
+		text-align: center;
+		margin-top: 50px;
+	}
 }
 
 // 沖縄
 .okinawa {
 	display: flex;
+	margin-top: 100px;
 
 	img {
 		box-shadow: 20px 20px 0 #5e9ef634;
