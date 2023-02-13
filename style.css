@@ -103,47 +103,62 @@ figcaption {
 	color: yellow!important;
 }
 
-/* yuka */
-.yuka{
-  max-width: 1200px;
-  margin: 0 auto;
-	font-family: 'Zen Maru Gothic', sans-serif;
-}
+/* yuka-main */
+/* .yuka{ */
+  /* max-width: 1200px; */
+  /* margin: 0 auto;
+	font-family: 'Zen Maru Gothic', sans-serif; */
+/* } */
 /* 画像 */
-.okinawa{
-  display: flex;
+/* .okinawa{
+  display: flex; */
   /* margin-top: 100px; */
-}
-.chiba{
+/* } */
+/* .chiba{
   display: flex;
   flex-direction: row-reverse;
   margin-top: 100px;
 	margin-bottom: 100px;
   text-align: left;
-}
+} */
 
 /* テキスト */
-.okinawa-text{
+/* .okinawa-text{
   margin-left: 150px;
-	font-size: 20px;
-}
-.chiba-text{
+} */
+/* .chiba-text{
   margin-right: 80px;
   width: 500px;
 	font-size: 20px;
+} */
+/* .okinawa-text h3{
+	font-size: 30px;
+	margin-bottom: 30px;
+} */
+/* .okinawa-text p{
+	font-size: 20px;
+	margin-top: 20px;
+} */
+/* .chiba-text h3{
+	font-size: 30px;
+	margin-bottom: 30px;
+} */
+/* .chiba-text p{
+	font-size: 20px;
+	margin-top: 20px;
+} */
 
-}
 
 /* 画像の影 */
-.okinawa-img img{
+/* .okinawa-img img{
   box-shadow: 20px 20px 0 #5e9ef634;
-}
-.chiba-img img{
+} */
+/* .chiba-img img{
   box-shadow: 20px 20px 0 #68f77e34;
-}
+} */
 
 /* 画像の動き */
-.yuka-img{
+/* .yuka-img{
   animation-name:smoothAnime;
   animation-duration:2s;
   animation-fill-mode:forwards;
@@ -159,7 +174,7 @@ figcaption {
   transform:translate3d(0, 0, 0) skewY(0);
   opacity:1;
   }
-}
+} */
 
 /* ボタン */
 .yuka-btn{
@@ -167,11 +182,11 @@ figcaption {
 position:relative;
 	/*ボタンの形状*/  
 color:#333;
-	padding: 10px 30px;
-
+padding: 10px 30px;
 display:inline-block;
-	text-decoration: none;
-	outline: none;
+text-decoration: none;
+outline: none;
+margin-top: 50px;
 }
 
 /*線の設定*/

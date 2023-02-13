@@ -1,0 +1,70 @@
+// yuka-main
+.yuka{
+  max-width: 1200px;
+  margin: 0 auto;
+	font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+// 沖縄
+.okinawa{
+  display: flex;
+  img{
+    box-shadow: 20px 20px 0 #5e9ef634;
+  }
+  .okinawa-text{
+    margin-left: 150px;
+  h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 20px;
+    margin-top: 20px;  
+  }
+  }
+}
+
+// 千葉
+.chiba{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+	margin-bottom: 100px;
+  text-align: left;
+  img{
+    box-shadow: 20px 20px 0 #68f77e34;
+  }
+  .chiba-text{
+    margin-right: 80px;
+    width: 500px;
+    font-size: 20px;
+  }
+  h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 20px;
+    margin-top: 20px;  
+  }
+}
+
+/* 画像の動き */
+.yuka-img{
+  animation-name:smoothAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+    transform-origin:left;
+  opacity:0;
+}
+@keyframes smoothAnime{
+  from {
+  transform:translate3d(0, 100%, 0) skewY(12deg);
+  opacity:0;
+  }
+  to {
+  transform:translate3d(0, 0, 0) skewY(0);
+  opacity:1;
+  }
+}
+
