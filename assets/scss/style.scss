@@ -1,3 +1,12 @@
+// kv部分
+/* シーサーのとこ */
+img{
+  width: 100%;
+}
+.kv{
+	position: relative;
+}
+
 .hako{
 	position: absolute;
 	bottom: 60px;
@@ -27,6 +36,63 @@
 		border-radius: 20%;
 		cursor: pointer;
 		margin-right: 50px;
+		opacity: 0.7;
+	}
+	a:hover{
+		opacity: 1;
 	}
 }
 
+.gifu, .gunnma h2{
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 80px;
+}
+
+#Shotaro{
+	font-family: 'Zen Maru Gothic', sans-serif;
+	h2:hover{
+		background-color: yellow;
+	}
+}
+
+/* slickのやつ */
+figure {
+	border: thin #c0c0c0 solid;
+	display: flex;
+	flex-flow: column;
+	padding: 5px;
+	max-width: 600px;
+	margin: auto;
+}
+
+/* img {
+	max-width: 220px;
+	max-height: 220px;
+} */
+
+figcaption {
+	background-color: #222;
+	color: #fff;
+	font: italic smaller sans-serif;
+	padding: 3px;
+	text-align: center;
+	height: 36px;
+	font-size: 20px;
+}
+
+.pics .slick-next{
+	right:20px!important;
+}
+.pics .slick-prev{
+	left:20px!important;
+}
+.pics .slick-arrow{
+	width: initial!important;
+	height: initial!important;
+	z-index:2!important;
+}
+.pics .slick-arrow:before{
+	font-size: 60px!important;
+	color: yellow!important;
+}
